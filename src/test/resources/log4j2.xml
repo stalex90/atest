@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO" packages="ru.foodband.tests.suite">
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="[%-5level] %c{1} - %msg%n" />
+        </Console>
+        <MyLogAppender name="mylog">
+            <PatternLayout
+                    pattern="[%-5level] %c{1} - %msg%n" />
+        </MyLogAppender>
+    </Appenders>
+    <Loggers>
+        <Root level="debug" additivity="false">
+            <AppenderRef ref="console" />
+            <AppenderRef ref="mylog"/>
+        </Root>
+    </Loggers>
+</Configuration>
